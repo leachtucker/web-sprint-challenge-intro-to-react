@@ -51,8 +51,10 @@ export default function SimpleModal(props) {
     <div style={modalStyle} className={classes.paper}>
       <Typography noWrap gutterBottom variant="h5" component="h2">{character.name}</Typography>
       <Typography variant="body2" color="textSecondary" component="p">Gender: {character.gender}</Typography>
-      <Typography variant="body2" color="textSecondary" component="p">Status: {character.status}</Typography>
+      <Typography variant="body2" color="textSecondary" component="p">Status: {character.status.toUpperCase()}</Typography>
       {character.location ? <Typography variant="body2" color="textSecondary" component="p">Location: {character.location.name}</Typography> : null}
+      <Typography variant="body2" color="textSecondary" component="p">Origin: {character.origin.name}</Typography>
+
     </div>
   );
 

@@ -4,16 +4,27 @@
 .Header {
   color: slategray;
 }
+
 /* write your parent styles in here for your App.js */
 h1 {
   font-family: Roboto;
   font-weight: 700;
   font-size: 2.5rem;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
+  margin-top: 2%;
 }
+
+.nav {
+  margin: 0 auto;
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .container {
   width: 85% !important;
   margin: 0 auto;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   padding: 1%;
 }

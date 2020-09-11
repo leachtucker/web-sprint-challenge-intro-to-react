@@ -17,6 +17,12 @@ const useStyles = makeStyles({
     },
     actions: {
         justifyContent: "center",
+    },
+    okay: {
+        color: "green",
+    },
+    danger: {
+        color: "red",
     }
 });
 
@@ -39,7 +45,7 @@ function Character(props) {
                     />
                     <CardContent>
                         <Typography noWrap gutterBottom variant="h5" component="h2">{character.name}</Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">Status: {character.status}</Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">Status: {character.status.toUpperCase()}</Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions className={classes.actions}>
