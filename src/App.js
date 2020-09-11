@@ -40,8 +40,8 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       <div className="nav">
-        <TextField id="page-input" label="Page" variant="outlined" color="primary" />
-        <Button variant="contained" color="primary" onClick={changePage(document.querySelector('#page-input'))}>Go</Button>
+        <TextField id="page-input" type="number" label="Page" variant="outlined" color="primary" />
+        <Button variant="contained" color="primary" onClick={() => {changePage(document.querySelector('#page-input').value)}}>Go</Button>
       </div>
       <Grid container className="container">
         {characters.map(charr => {
