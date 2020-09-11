@@ -2,7 +2,18 @@
   text-align: center;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: slategray;
 }
 /* write your parent styles in here for your App.js */
+h1 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.container {
+  width: 85% !important;
+  margin: 0 auto;
+  border: 1px solid white;
+  padding: 1%;
+}
